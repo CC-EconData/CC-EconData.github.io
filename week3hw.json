@@ -1,0 +1,66 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+  "title": {
+    "text": "Covid Cases for places Patrick Bamford has played",
+    "subtitle":"This shows graph working from raw data",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+  
+   "data": {
+     "values": [{ "a":"Bolton", "b":"2021-10-17", "c":45},
+      { "a":"Trafford", "b":"2021-10-17", "c":53},
+      { "a":"Barnsley", "b":"2021-10-17", "c":89},
+      { "a":"Barnet", "b":"2021-10-17", "c":74},
+      { "a":"Hounslow", "b":"2021-10-17", "c":43}]
+
+
+    
+  },
+
+   "transform":[
+      
+      {"filter": {
+        "field": "areaName", 
+        "oneOf": ["Burnley", "Middlesbrough", "Kensington and Chelsea"]}
+        }
+
+
+    ],
+  
+  
+  "height": 300,
+  "width": 310,
+   
+  "mark": {"type": "line", "point": false},
+ 
+  "encoding": {
+
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": null,
+      "axis": {"grid": false}
+    },
+
+    "y": {
+      "field": "newCasesBySpecimenDate",
+      "type": "quantitative",
+      "title": null,
+      "axis": {"grid": false}
+    },
+
+    "color": {
+      "field": "areaName",
+      "type": "nominal",
+      "scale": {"scheme": "inferno"},
+      "title": null,
+      "legend": {
+        "orient": "top-left", 
+        "fillColor": "#FcFdFd"}
+    }
+}
+}
