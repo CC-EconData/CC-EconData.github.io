@@ -1,5 +1,4 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   
   "title": {
     "text": "Covid Cases for places Patrick Bamford has played",
@@ -22,13 +21,7 @@
   },
 
   
-      
-      {"filter": {
-        "field": "areaName", 
-        "oneOf": ["Burnley", "Middlesbrough", "Kensington and Chelsea"]}
-        }
 
-  
   
   "height": 300,
   "width": 310,
