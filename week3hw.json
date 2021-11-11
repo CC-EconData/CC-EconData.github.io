@@ -31,16 +31,16 @@
   "encoding": {
 
     "x": {
-      "field": "date",
+      "field": "b",
       "type": "temporal",
-      "title": null,
+      "title": Date,
       "axis": {"grid": false}
     },
 
     "y": {
-      "field": "newCasesBySpecimenDate",
+      "field": "c",
       "type": "quantitative",
-      "title": null,
+      "title": newCasesBySpecimenDate,
       "axis": {"grid": false}
     },
 
