@@ -1,7 +1,7 @@
 {
   
   "title": {
-    "text": "Covid Cases for places Patrick Bamford has played",
+    "text": "Covid Cases for places Patrick Bamford has played on 2021-10-17",
     "subtitle":"This shows graph working from raw data",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
@@ -10,11 +10,11 @@
   },
   
    "data": {
-     "values": [{ "a":"Bolton", "b":"2021-10-17", "c":45},
-      { "a":"Trafford", "b":"2021-10-17", "c":53},
-      { "a":"Barnsley", "b":"2021-10-17", "c":89},
-      { "a":"Barnet", "b":"2021-10-17", "c":74},
-      { "a":"Hounslow", "b":"2021-10-17", "c":43}]
+     "values": [{ "Location":"Bolton", "Value":45},
+      { "Location":"Trafford", "Value":53},
+      { "Location":"Barnsley", "Value":89},
+      { "Location":"Barnet", "Value":74},
+      { "Location":"Hounslow", "Value":43}]
 
 
     
@@ -26,19 +26,19 @@
   "height": 300,
   "width": 310,
    
-  "mark": {"type": "line", "point": false},
+  "mark": {"type": "bar", "color": "#86d0bb"},
  
   "encoding": {
 
     "x": {
-      "field": "b",
-      "type": "temporal",
+      "field": "areaName",
+      "type": "nominal",
       "title": Date,
       "axis": {"grid": false}
     },
 
     "y": {
-      "field": "c",
+      "field": "Value",
       "type": "quantitative",
       "title": newCasesBySpecimenDate,
       "axis": {"grid": false}
