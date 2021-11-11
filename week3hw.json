@@ -21,7 +21,13 @@
     
   },
 
- 
+  "transform":[
+      
+      {"filter": {
+        "field": "areaName", 
+        "oneOf": ["Burnley", "Middlesbrough", "Kensington and Chelsea"]}
+        }
+
   
   
   "height": 300,
