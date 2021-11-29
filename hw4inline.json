@@ -28,11 +28,10 @@
 
    
 
-    "data":
+    "data": {
 
-      {
-
-        "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/chartENV19.csv"},
+      "values":[
+        {"a": "1984", "b": 2.5}, {"a": "1989", "b": 5.79}, {"a": "1994", "b": 4.06}, {"a": "1999", "b": 7.67}, {"a": "2004", "b": 5.74}]},
 
  
 
@@ -60,7 +59,7 @@
 
       "x": {
 
-        "field": "Time",
+        "field": "a",
 
         "type": "nominal",
 
@@ -68,7 +67,7 @@
 
         "axis": {
 
-          "title": null,
+          "title": "Date",
 
           "grid": false,
 
@@ -86,11 +85,11 @@
 
       "y": {
 
-        "field": "Value",
+        "field": "b",
 
         "type": "quantitative",
 
-        "title": "",
+        "title": "Value",
 
         "axis": {"grid": false}
 
