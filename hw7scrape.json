@@ -12,7 +12,7 @@
 
     "title": {
 
-      "text": "The Athenian product prices ",
+      "text": "The Athenian prices ",
 
       "subtitle":"",
 
@@ -28,11 +28,10 @@
 
    
 
-     "data": {
+    "data": {
     "url": "https://raw.githubusercontent.com/CCecondata/CCecondata.github.io/main/hw7athenian.csv",
     "format": {"type": "csv"}
-    
-    },
+  },
 
  
 
@@ -48,7 +47,7 @@
 
       "type": "bar",
 
-      "color": yellow
+      "color": "deeppink"
 
     },
 
@@ -60,7 +59,7 @@
 
       "x": {
 
-        "field": "a",
+        "field": "0",
 
         "type": "nominal",
 
@@ -68,7 +67,7 @@
 
         "axis": {
 
-          "title": "Product name",
+          "title": "",
 
           "grid": false,
 
@@ -86,7 +85,7 @@
 
       "y": {
 
-        "field": "b",
+        "field": "1",
 
         "type": "quantitative",
 
@@ -94,18 +93,7 @@
 
         "axis": {"grid": false}
 
-      },
-
- 
-
-      
-     
-
-      ]
-
-
-
+      }
 
     }
-
-  }
+}
