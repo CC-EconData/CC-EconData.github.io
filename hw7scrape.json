@@ -12,9 +12,9 @@
 
     "title": {
 
-      "text": "Green Party representation – European Parliament ",
+      "text": "The Athenian product prices ",
 
-      "subtitle":"% of seats won by election. Source: European Parliament",
+      "subtitle":"",
 
       "subtitleFontStyle":"italic",
 
@@ -68,7 +68,7 @@
 
         "axis": {
 
-          "title": "Date",
+          "title": "Product name",
 
           "grid": false,
 
@@ -90,7 +90,7 @@
 
         "type": "quantitative",
 
-        "title": "Value",
+        "title": "Price (£)",
 
         "axis": {"grid": false}
 
@@ -98,14 +98,7 @@
 
  
 
-      "tooltip": [
-
-      {"field": "Time", "type": "nominal", "title": "Election"},
-
-      {"field": "", "type": "nominal"},
-
-      {"field": "Value", "type": "quantitative", "title": "Green seats in EU Parliament (%)"}
-
+      
      
 
       ]
