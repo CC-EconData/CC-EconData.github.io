@@ -1,0 +1,100 @@
+{
+
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+ 
+
+    "description": "GII scores",
+
+  
+
+  
+
+    "title": {
+
+      "text": "Global Innovation Index score ",
+
+      "subtitle":"",
+
+      "subtitleFontStyle":"italic",
+
+      "subtitleFontSize":10,
+
+      "anchor": "start",
+
+      "color": "black"
+
+    },
+
+   
+
+   
+
+     "data": {
+    "url": "https://raw.githubusercontent.com/CCecondata/CCecondata.github.io/main/hw8giiscore.csv",
+    "format": {"type": "csv"}
+    },
+
+ 
+
+    
+
+    "height": 300,
+
+    "width": 260,
+
+   
+
+    "mark": {
+
+      "type": "bar",
+
+      "color":"peachpuff"
+
+    },
+
+   
+
+    "encoding": {
+
+   
+
+      "x": {
+
+        "field": "0",
+
+        "type": "nominal",
+
+        "sort": "",
+
+        "axis": {
+
+          "title": "",
+
+          "grid": false,
+
+          "ticks": false,
+
+          "labelAngle": 45
+
+         
+
+        }
+
+      },
+
+ 
+
+      "y": {
+
+        "field": "1",
+
+        "type": "quantitative",
+
+        "title": "GII Score",
+
+        "axis": {"grid": false}
+
+      }
+    }
+}
