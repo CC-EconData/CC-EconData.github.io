@@ -1,0 +1,101 @@
+{
+
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+ 
+
+    "description": "This chart shows the top 12 annual salaries in 2020.",
+
+  
+
+  
+
+    "title": {
+
+      "text": "Top 12 US Annual Salaries 2020",
+
+      "subtitle":"",
+
+      "subtitleFontStyle":"italic",
+
+      "subtitleFontSize":10,
+
+      "anchor": "start",
+
+      "color": "black"
+
+    },
+
+   
+
+   
+
+     "data": {
+    "url": "https://raw.githubusercontent.com/CCecondata/CCecondata.github.io/main/projectdata/ussalaries.csv",
+    "format": {"type": "csv"}
+    },
+
+ 
+
+    
+
+    "height": 300,
+
+    "width": 260,
+
+   
+
+    "mark": {
+
+      "type": "bar",
+
+      "color":"goldenrod"
+
+    },
+
+   
+
+    "encoding": {
+
+   
+
+      "x": {
+
+        "field": "0",
+
+        "type": "nominal",
+
+        "sort": "",
+
+        "axis": {
+
+          "title": "",
+
+          "grid": false,
+
+          "ticks": false,
+
+          "labelAngle": 25,
+          "labelFontSize": 8
+
+         
+
+        }
+
+      },
+
+ 
+
+      "y": {
+
+        "field": "1",
+
+        "type": "quantitative",
+
+        "title": "US Dollars",
+
+        "axis": {"grid": false}
+
+      }
+    }
+}
