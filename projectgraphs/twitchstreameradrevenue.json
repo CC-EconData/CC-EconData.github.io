@@ -31,7 +31,7 @@
    
 
      "data": {
-    "url": "https://raw.githubusercontent.com/CCecondata/CCecondata.github.io/main/streameradrevenue.csv",
+    "url": "https://raw.githubusercontent.com/CCecondata/CCecondata.github.io/main/projectgraphs/streameradrevenue.csv",
     "format": {"type": "csv"}
     },
 
