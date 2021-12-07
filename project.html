@@ -12,7 +12,7 @@
         <link rel="icon" type="image/png" href="icon.png">
   <style>
     html, body, #map {
-    background-color: #89CFF0;
+    background-color: #CBC3E3;
   </style>
 
 <!--The next three lines allow the Vega embed-->
@@ -36,7 +36,15 @@
   
 <!-- ///////////////////  Portfolio page start //////////////////////////////////// -->
   
-  <p> This is where my project will be </p>
+<h2 class="web_name"> Is the advertising revenue Twitch streamers make warranted? </h2>
+  
+<!--Chart 1 -->
+  <div class="chart" id="chart1">
+      <script>
+        var myChart1 = "twitchstreameradrevenue.json";
+        vegaEmbed('#chart1', myChart1);
+      </script>
+  </div>
   
  
 
