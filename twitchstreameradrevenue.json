@@ -1,0 +1,100 @@
+{
+
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+ 
+
+    "description": "This chart shows estimated advertising revenue for top twitch streamers for 2020.",
+
+  
+
+  
+
+    "title": {
+
+      "text": "2020 ad revenue for select Twitch streamers",
+
+      "subtitle":"",
+
+      "subtitleFontStyle":"italic",
+
+      "subtitleFontSize":10,
+
+      "anchor": "start",
+
+      "color": "black"
+
+    },
+
+   
+
+   
+
+     "data": {
+    "url": "https://raw.githubusercontent.com/CCecondata/CCecondata.github.io/main/streameradrevenue.csv",
+    "format": {"type": "csv"}
+    },
+
+ 
+
+    
+
+    "height": 300,
+
+    "width": 260,
+
+   
+
+    "mark": {
+
+      "type": "bar",
+
+      "color":"aquamarine"
+
+    },
+
+   
+
+    "encoding": {
+
+   
+
+      "x": {
+
+        "field": "0",
+
+        "type": "nominal",
+
+        "sort": "",
+
+        "axis": {
+
+          "title": "",
+
+          "grid": false,
+
+          "ticks": false,
+
+          "labelAngle": 45
+
+         
+
+        }
+
+      },
+
+ 
+
+      "y": {
+
+        "field": "1",
+
+        "type": "quantitative",
+
+        "title": "US Dollars",
+
+        "axis": {"grid": false}
+
+      }
+    }
+}
