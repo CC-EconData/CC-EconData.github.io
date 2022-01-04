@@ -1,0 +1,89 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+  "title": {
+    "text": "Market share of different social media platforms",
+    "subtitle":"",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+  
+   "data": {
+    "url": "https://raw.githubusercontent.com/CCecondata/CCecondata.github.io/main/hw10.csv",
+    "format": {"type": "csv"}
+  },
+
+ 
+  
+  
+  "height": 300,
+  "width": 310,
+
+    "mark": {"type": "line", "point": false},
+   
+"selection": {
+    "Brand": {
+      "type": "single",
+      "fields": ["Brand"],
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "Facebook",
+          "Pinterest",
+          "Twitter",
+          "YouTube",
+          "Tumblr",
+          "reddit",
+          "Instagram",
+          "LinkedIn"
+        ],
+        "name": "Pick a Platform: "
+      }
+    }
+  },
+
+"transform": [
+    
+    {"filter": {"selection": "Brand"}},
+    {
+      "filter": {
+        "field": "Date",
+        "range": [
+          {"year": 2018},
+          {"year": 2021}
+        ]
+      }
+    }
+  ],
+
+ 
+  "encoding": {
+
+    "x": {
+      "field": "Date",
+      "type": "temporal",
+      "title": null,
+      "axis": {"grid": false}
+    },
+
+    "y": {
+      "field": "Share",
+      "type": "quantitative",
+      "title": null,
+      "axis": {"grid": false}
+    },
+
+    "color": {
+      "field": "Brand",
+      "type": "nominal",
+      "scale": {"scheme": "inferno"},
+      "title": null,
+      "legend": {
+        "orient": "", 
+        "fillColor": "#FcFdFd"}
+    }
+}
+}
