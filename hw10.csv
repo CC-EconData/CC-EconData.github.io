@@ -1,0 +1,433 @@
+﻿Date,Brand,Share
+2018-01,Facebook,75.45
+2018-01,Pinterest,10.31
+2018-01,Twitter,5.51
+2018-01,YouTube,4.91
+2018-01,Tumblr,0.64
+2018-01,reddit,0.53
+2018-01,Instagram,1.7
+2018-01,LinkedIn,0.14
+2018-01,Other ,0.81
+2018-02,Facebook,75.6
+2018-02,Pinterest,9.98
+2018-02,Twitter,5.46
+2018-02,YouTube,5.06
+2018-02,Tumblr,0.67
+2018-02,reddit,0.48
+2018-02,Instagram,1.84
+2018-02,LinkedIn,0.17
+2018-02,Other ,0.74
+2018-03,Facebook,69.72
+2018-03,Pinterest,12.38
+2018-03,Twitter,6.09
+2018-03,YouTube,7
+2018-03,Tumblr,0.89
+2018-03,reddit,0.6
+2018-03,Instagram,2.23
+2018-03,LinkedIn,0.25
+2018-03,Other ,0.84
+2018-04,Facebook,65.73
+2018-04,Pinterest,15.06
+2018-04,Twitter,6.81
+2018-04,YouTube,7.9
+2018-04,Tumblr,0.93
+2018-04,reddit,0.67
+2018-04,Instagram,1.64
+2018-04,LinkedIn,0.25
+2018-04,Other ,1.01
+2018-05,Facebook,66.92
+2018-05,Pinterest,13.97
+2018-05,Twitter,6.78
+2018-05,YouTube,7.89
+2018-05,Tumblr,0.85
+2018-05,reddit,0.47
+2018-05,Instagram,1.8
+2018-05,LinkedIn,0.24
+2018-05,Other ,1.08
+2018-06,Facebook,63.03
+2018-06,Pinterest,14.23
+2018-06,Twitter,8.29
+2018-06,YouTube,9.66
+2018-06,Tumblr,0.91
+2018-06,reddit,0.46
+2018-06,Instagram,2.16
+2018-06,LinkedIn,0.27
+2018-06,Other ,0.99
+2018-07,Facebook,63.71
+2018-07,Pinterest,14.88
+2018-07,Twitter,8.07
+2018-07,YouTube,8.62
+2018-07,Tumblr,0.83
+2018-07,reddit,0.36
+2018-07,Instagram,2.41
+2018-07,LinkedIn,0.3
+2018-07,Other ,0.82
+2018-08,Facebook,65.15
+2018-08,Pinterest,13.49
+2018-08,Twitter,8.49
+2018-08,YouTube,8.58
+2018-08,Tumblr,0.79
+2018-08,reddit,0.38
+2018-08,Instagram,2.37
+2018-08,LinkedIn,0.27
+2018-08,Other ,0.48
+2018-09,Facebook,66.25
+2018-09,Pinterest,12.84
+2018-09,Twitter,8.8
+2018-09,YouTube,7.97
+2018-09,Tumblr,0.95
+2018-09,reddit,0.36
+2018-09,Instagram,1.94
+2018-09,LinkedIn,0.25
+2018-09,Other ,0.64
+2018-10,Facebook,66.81
+2018-10,Pinterest,12.99
+2018-10,Twitter,8.57
+2018-10,YouTube,7.45
+2018-10,Tumblr,1.07
+2018-10,reddit,0.36
+2018-10,Instagram,1.88
+2018-10,LinkedIn,0.19
+2018-10,Other ,0.68
+2018-11,Facebook,69.33
+2018-11,Pinterest,13.05
+2018-11,Twitter,7.08
+2018-11,YouTube,6.14
+2018-11,Tumblr,1.07
+2018-11,reddit,0.52
+2018-11,Instagram,1.94
+2018-11,LinkedIn,0.2
+2018-11,Other ,0.67
+2018-12,Facebook,66.33
+2018-12,Pinterest,16.25
+2018-12,Twitter,8.24
+2018-12,YouTube,4.77
+2018-12,Tumblr,0.96
+2018-12,reddit,0.77
+2018-12,Instagram,1.77
+2018-12,LinkedIn,0.24
+2018-12,Other ,0.67
+2019-01,Facebook,65.88
+2019-01,Pinterest,16.36
+2019-01,Twitter,9.1
+2019-01,YouTube,3.97
+2019-01,Tumblr,0.72
+2019-01,reddit,1.42
+2019-01,Instagram,1.69
+2019-01,LinkedIn,0.23
+2019-01,Other ,0.63
+2019-02,Facebook,68.95
+2019-02,Pinterest,15.15
+2019-02,Twitter,7.41
+2019-02,YouTube,3.76
+2019-02,Tumblr,0.66
+2019-02,reddit,1.71
+2019-02,Instagram,1.56
+2019-02,LinkedIn,0.25
+2019-02,Other ,0.55
+2019-03,Facebook,67.46
+2019-03,Pinterest,16.96
+2019-03,Twitter,7.26
+2019-03,YouTube,3.92
+2019-03,Tumblr,0.61
+2019-03,reddit,0.83
+2019-03,Instagram,2.21
+2019-03,LinkedIn,0.16
+2019-03,Other ,0.59
+2019-04,Facebook,68.36
+2019-04,Pinterest,16.26
+2019-04,Twitter,6.72
+2019-04,YouTube,4.59
+2019-04,Tumblr,0.62
+2019-04,reddit,0.62
+2019-04,Instagram,2.21
+2019-04,LinkedIn,0.18
+2019-04,Other ,0.44
+2019-05,Facebook,70.42
+2019-05,Pinterest,13.01
+2019-05,Twitter,6.25
+2019-05,YouTube,4.33
+2019-05,Tumblr,0.57
+2019-05,reddit,3.08
+2019-05,Instagram,1.81
+2019-05,LinkedIn,0.17
+2019-05,Other ,0.36
+2019-06,Facebook,73.91
+2019-06,Pinterest,13.16
+2019-06,Twitter,6.18
+2019-06,YouTube,3.81
+2019-06,Tumblr,0.57
+2019-06,reddit,0.23
+2019-06,Instagram,1.43
+2019-06,LinkedIn,0.15
+2019-06,Other ,0.56
+2019-07,Facebook,72.16
+2019-07,Pinterest,14.46
+2019-07,Twitter,6.06
+2019-07,YouTube,3.86
+2019-07,Tumblr,0.6
+2019-07,reddit,0.25
+2019-07,Instagram,1.75
+2019-07,LinkedIn,0.16
+2019-07,Other ,0.7
+2019-08,Facebook,71.75
+2019-08,Pinterest,15.5
+2019-08,Twitter,6.07
+2019-08,YouTube,3.65
+2019-08,Tumblr,0.6
+2019-08,reddit,0.3
+2019-08,Instagram,1.58
+2019-08,LinkedIn,0.15
+2019-08,Other ,0.4
+2019-09,Facebook,72.94
+2019-09,Pinterest,13.18
+2019-09,Twitter,6.56
+2019-09,YouTube,3.67
+2019-09,Tumblr,0.5
+2019-09,reddit,0.23
+2019-09,Instagram,2.42
+2019-09,LinkedIn,0.18
+2019-09,Other ,0.32
+2019-10,Facebook,67.73
+2019-10,Pinterest,11.08
+2019-10,Twitter,10.57
+2019-10,YouTube,3.71
+2019-10,Tumblr,0.45
+2019-10,reddit,0.27
+2019-10,Instagram,5.74
+2019-10,LinkedIn,0.16
+2019-10,Other ,0.29
+2019-11,Facebook,66.01
+2019-11,Pinterest,11.63
+2019-11,Twitter,11.49
+2019-11,YouTube,3.28
+2019-11,Tumblr,0.41
+2019-11,reddit,0.25
+2019-11,Instagram,6.5
+2019-11,LinkedIn,0.14
+2019-11,Other ,0.29
+2019-12,Facebook,64.22
+2019-12,Pinterest,10.97
+2019-12,Twitter,12.96
+2019-12,YouTube,3.79
+2019-12,Tumblr,0.37
+2019-12,reddit,0.27
+2019-12,Instagram,7.05
+2019-12,LinkedIn,0.1
+2019-12,Other ,0.27
+2020-01,Facebook,61.3
+2020-01,Pinterest,11.45
+2020-01,Twitter,14.51
+2020-01,YouTube,3.33
+2020-01,Tumblr,0.39
+2020-01,reddit,0.29
+2020-01,Instagram,8.4
+2020-01,LinkedIn,0.12
+2020-01,Other ,0.21
+2020-02,Facebook,62.11
+2020-02,Pinterest,10.7
+2020-02,Twitter,14.44
+2020-02,YouTube,2.91
+2020-02,Tumblr,0.37
+2020-02,reddit,0.27
+2020-02,Instagram,8.9
+2020-02,LinkedIn,0.12
+2020-02,Other ,0.18
+2020-03,Facebook,64.99
+2020-03,Pinterest,8.31
+2020-03,Twitter,14.29
+2020-03,YouTube,3.1
+2020-03,Tumblr,0.28
+2020-03,reddit,0.23
+2020-03,Instagram,8.54
+2020-03,LinkedIn,0.12
+2020-03,Other ,0.14
+2020-04,Facebook,60.15
+2020-04,Pinterest,10.46
+2020-04,Twitter,15.48
+2020-04,YouTube,4.2
+2020-04,Tumblr,0.36
+2020-04,reddit,0.35
+2020-04,Instagram,8.73
+2020-04,LinkedIn,0.12
+2020-04,Other ,0.15
+2020-05,Facebook,72.02
+2020-05,Pinterest,13.49
+2020-05,Twitter,6.2
+2020-05,YouTube,5.58
+2020-05,Tumblr,0.5
+2020-05,reddit,0.39
+2020-05,Instagram,1.48
+2020-05,LinkedIn,0.16
+2020-05,Other ,0.18
+2020-06,Facebook,74
+2020-06,Pinterest,12.11
+2020-06,Twitter,6.5
+2020-06,YouTube,4.99
+2020-06,Tumblr,0.53
+2020-06,reddit,0.37
+2020-06,Instagram,1.2
+2020-06,LinkedIn,0.18
+2020-06,Other ,0.12
+2020-07,Facebook,74.17
+2020-07,Pinterest,11.68
+2020-07,Twitter,6.78
+2020-07,YouTube,4.86
+2020-07,Tumblr,0.44
+2020-07,reddit,0.37
+2020-07,Instagram,1.35
+2020-07,LinkedIn,0.2
+2020-07,Other ,0.15
+2020-08,Facebook,75.15
+2020-08,Pinterest,11.51
+2020-08,Twitter,6.41
+2020-08,YouTube,3.62
+2020-08,Tumblr,0.45
+2020-08,reddit,0.31
+2020-08,Instagram,1.42
+2020-08,LinkedIn,0.23
+2020-08,Other ,0.9
+2020-09,Facebook,74.59
+2020-09,Pinterest,11.58
+2020-09,Twitter,6.88
+2020-09,YouTube,3.99
+2020-09,Tumblr,0.54
+2020-09,reddit,0.34
+2020-09,Instagram,1.58
+2020-09,LinkedIn,0.23
+2020-09,Other ,0.27
+2020-10,Facebook,71.85
+2020-10,Pinterest,12.31
+2020-10,Twitter,8.65
+2020-10,YouTube,4.47
+2020-10,Tumblr,0.43
+2020-10,reddit,0.36
+2020-10,Instagram,1.53
+2020-10,LinkedIn,0.25
+2020-10,Other ,0.15
+2020-11,Facebook,68.72
+2020-11,Pinterest,12.11
+2020-11,Twitter,11.68
+2020-11,YouTube,4.22
+2020-11,Tumblr,0.41
+2020-11,reddit,0.38
+2020-11,Instagram,2.01
+2020-11,LinkedIn,0.3
+2020-11,Other ,0.17
+2020-12,Facebook,68.39
+2020-12,Pinterest,13.61
+2020-12,Twitter,10.25
+2020-12,YouTube,4.27
+2020-12,Tumblr,0.33
+2020-12,reddit,0.44
+2020-12,Instagram,2.25
+2020-12,LinkedIn,0.29
+2020-12,Other ,0.17
+2021-01,Facebook,69.8
+2021-01,Pinterest,11.88
+2021-01,Twitter,9.54
+2021-01,YouTube,4.9
+2021-01,Tumblr,0.36
+2021-01,reddit,0.53
+2021-01,Instagram,2.56
+2021-01,LinkedIn,0.29
+2021-01,Other ,0.14
+2021-02,Facebook,71.92
+2021-02,Pinterest,9.94
+2021-02,Twitter,8.65
+2021-02,YouTube,5.06
+2021-02,Tumblr,0.36
+2021-02,reddit,0.57
+2021-02,Instagram,2.93
+2021-02,LinkedIn,0.39
+2021-02,Other ,0.18
+2021-03,Facebook,72.03
+2021-03,Pinterest,9.63
+2021-03,Twitter,8.81
+2021-03,YouTube,5.28
+2021-03,Tumblr,0.3
+2021-03,reddit,0.5
+2021-03,Instagram,2.94
+2021-03,LinkedIn,0.33
+2021-03,Other ,0.18
+2021-04,Facebook,69.94
+2021-04,Pinterest,8.92
+2021-04,Twitter,9.58
+2021-04,YouTube,5.97
+2021-04,Tumblr,0.48
+2021-04,reddit,0.74
+2021-04,Instagram,3.71
+2021-04,LinkedIn,0.39
+2021-04,Other ,0.27
+2021-05,Facebook,71.51
+2021-05,Pinterest,8.11
+2021-05,Twitter,8.49
+2021-05,YouTube,6.18
+2021-05,Tumblr,0.56
+2021-05,reddit,0.59
+2021-05,Instagram,3.98
+2021-05,LinkedIn,0.33
+2021-05,Other ,0.25
+2021-06,Facebook,71.53
+2021-06,Pinterest,7.31
+2021-06,Twitter,10.01
+2021-06,YouTube,5.01
+2021-06,Tumblr,0.89
+2021-06,reddit,0.51
+2021-06,Instagram,4.28
+2021-06,LinkedIn,0.3
+2021-06,Other ,0.16
+2021-07,Facebook,74.81
+2021-07,Pinterest,6.33
+2021-07,Twitter,8.84
+2021-07,YouTube,4.25
+2021-07,Tumblr,0.99
+2021-07,reddit,0.58
+2021-07,Instagram,3.72
+2021-07,LinkedIn,0.28
+2021-07,Other ,0.2
+2021-08,Facebook,73.27
+2021-08,Pinterest,7.22
+2021-08,Twitter,8.91
+2021-08,YouTube,4.72
+2021-08,Tumblr,1.4
+2021-08,reddit,0.58
+2021-08,Instagram,3.41
+2021-08,LinkedIn,0.28
+2021-08,Other ,0.21
+2021-09,Facebook,72.19
+2021-09,Pinterest,8.15
+2021-09,Twitter,8.7
+2021-09,YouTube,4.69
+2021-09,Tumblr,1.01
+2021-09,reddit,0.66
+2021-09,Instagram,3.99
+2021-09,LinkedIn,0.36
+2021-09,Other ,0.25
+2021-10,Facebook,72.22
+2021-10,Pinterest,8.37
+2021-10,Twitter,8.77
+2021-10,YouTube,4.2
+2021-10,Tumblr,0.73
+2021-10,reddit,0.82
+2021-10,Instagram,4.3
+2021-10,LinkedIn,0.34
+2021-10,Other ,0.25
+2021-11,Facebook,74.13
+2021-11,Pinterest,7.65
+2021-11,Twitter,7.73
+2021-11,YouTube,3.88
+2021-11,Tumblr,0.46
+2021-11,reddit,1.06
+2021-11,Instagram,4.5
+2021-11,LinkedIn,0.33
+2021-11,Other ,0.26
+2021-12,Facebook,76.47
+2021-12,Pinterest,6.47
+2021-12,Twitter,7.45
+2021-12,YouTube,3.87
+2021-12,Tumblr,0.43
+2021-12,reddit,0.71
+2021-12,Instagram,4.06
+2021-12,LinkedIn,0.32
+2021-12,Other ,0.22
