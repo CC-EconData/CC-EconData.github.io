@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Stock prices of 5 Tech Companies over Time.",
+  "description": "Average players for Turmoil per month 2020",
 
     "height": 300,"width": 260,
   
