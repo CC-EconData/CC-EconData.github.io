@@ -1,0 +1,17 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Average Number of Players on Turmoil.",
+
+    "data": {
+    "url": "https://raw.githubusercontent.com/CCecondata/CCecondata.github.io/main/projectdata/turmoilplayers.csv",
+    "format": {"type": "csv"}
+  },
+  "mark": {
+    "type": "line",
+    "point": true
+  },
+  "encoding": {
+    "x": {"field": "Month", "type": "nominal","sort": {"field":"index"}},
+    "y": {"field":"Average Players", "type": "quantitative"}
+  }
+}
