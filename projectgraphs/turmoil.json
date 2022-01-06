@@ -1,17 +1,38 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Average Number of Players on Turmoil.",
+  "description": "Stock prices of 5 Tech Companies over Time.",
 
-    "data": {
-    "url": "https://raw.githubusercontent.com/CCecondata/CCecondata.github.io/main/projectdata/turmoilplayers.csv",
+    
+"layer": [ 
+  
+  {"data": {
+    "values": [
+      {"Month": "January", "Average Players":""},{"Month": "February", "Average Players":900}
+    ]
+  },
+    "mark": {"type": "rect", "strokeWidth": 1},
+      "encoding": {
+        "y":{"field":"Average Players","type":"quantitative"},
+        "x":{"field":"Month","type":"nominal","sort":""},
+        "color": {"value": "yellow"},
+        "opacity":{"value":0.6
+        }
+      }
+  },
+   {"data": {
+    "url": "https://raw.githubusercontent.com/CCecondata/CCecondata.github.io/main/projectdata/turmoil.csv",
     "format": {"type": "csv"}
   },
-  "mark": {
+    "mark": {
     "type": "line",
     "point": true
   },
   "encoding": {
     "x": {"field": "Month", "type": "nominal","sort": {"field":"index"}},
-    "y": {"field":"Average Players", "type": "quantitative"}
+    "y": {"field":"Average Players", "type": "quantitative"},
+    "tooltip":{"field":"Average Players", "type":"quantitative"
+        }
   }
-}
+  }
+  ]
+  }
