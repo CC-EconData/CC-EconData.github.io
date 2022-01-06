@@ -34,11 +34,8 @@
       "type": "nominal",
       "sort": [],
       "scale": {"scheme": "yellowgreenblue"}
-    },
-    "tooltip": [
-      {"field": "Time", "type": "temporal", "timeUnit": "year", "title": "Year"},
-      {"field": "Value", "type": "quantitative", "title": "Green patents (%)"},
-      {"field": "Country"}
-    ]
+    }
+ 
+  
   }
 }
