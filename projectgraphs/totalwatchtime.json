@@ -4,7 +4,7 @@
   "data": {
         "url": "https://raw.githubusercontent.com/CCecondata/CCecondata.github.io/main/projectdata/watch_time.csv",
         "format": {"type": "csv"}},
-"height": 300,"width": 260,
+
 
 "transform": [
     {
@@ -26,9 +26,19 @@
   {"calculate": "(datum.watch_sum/datum.TotalTime)*100", "as": "% of Total Watch Time"}
   
   ], "mark": "arc",
+  "params": [{
+    "name": "platformselect",
+    "select": {"type": "point", "fields": ["Platform"]},
+    "bind": "legend"
+  }],
   "encoding": {
     "theta": {"field": "watch_sum", "type": "quantitative"},
     "color": {"field": "Platform", "type": "nominal"},
+  
+    "opacity": {
+      "condition": {"param": "platformselect", "value": 1},
+      "value": 0.3
+    },
     "tooltip": [
           {
             "field": "% of Total Watch Time",
@@ -39,3 +49,5 @@
         ]
   }
     }
+
+
