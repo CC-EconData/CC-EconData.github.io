@@ -4,7 +4,7 @@
   "data": {
         "url": "https://raw.githubusercontent.com/CCecondata/CCecondata.github.io/main/projectdata/watch_time.csv",
         "format": {"type": "csv"}},
-
+"height": 300,"width": 260,
 
 "transform": [
     {
