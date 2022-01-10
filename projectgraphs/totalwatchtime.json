@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Shows total % of watch time on twitch by Platform.",
+  "data": {
+        "url": "https://raw.githubusercontent.com/CCecondata/CCecondata.github.io/main/projectdata/watch_time.csv",
+        "format": {"type": "csv"}},
+
+
+"transform": [
+    {
+      "aggregate": [{
+       "op": "sum",
+       "field": "watch_time",
+       "as": "watch_sum"
+      }],
+      "groupby": ["Platform"]},
+
+      {
+    "window": [{
+      "op": "sum",
+      "field": "watch_sum",
+      "as": "TotalTime"
+    }],
+    "frame": [null, null]
+  },
+  {"calculate": "(datum.watch_sum/datum.TotalTime)*100", "as": "% of Total Watch Time"}
+  
+  ], "mark": "arc",
+  "encoding": {
+    "theta": {"field": "watch_sum", "type": "quantitative"},
+    "color": {"field": "Platform", "type": "nominal"},
+    "tooltip": [
+          {
+            "field": "% of Total Watch Time",
+            "type": "quantitative",
+            "title": "% of Total Watch Time ",
+            "format": ".2f"
+          }
+        ]
+  }
+    }
