@@ -1,0 +1,62 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Market share of different social media platforms",
+    "subtitle": "",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/CCecondata/CCecondata.github.io/main/projectdata/turmoilfull.csv",
+    "format": {"type": "csv"}
+  },
+  "height": 300,
+  "width": 310,
+  "mark": {"type": "line", "point": false},
+  "selection": {
+    "Year": {
+      "type": "single",
+      "fields": ["year"],
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020"
+          
+        ],
+        "name": "Pick a Year: "
+      }
+    }
+  },
+  "transform": [
+    {"filter": {"selection": "Year"}}
+  ],
+  "encoding": {
+    "x": {
+      "field": "month",
+      "type": "nominal",
+      "title": null,
+      "sort": {"field": "index"},
+      "axis": {"grid": false}
+    },
+    "y": {
+      "field": "Average Players",
+      "type": "quantitative",
+      "title": null,
+      "axis": {"grid": false}
+    },
+    "color": {
+      "field": "year",
+      "type":"nominal",
+      "scale": {"scheme": "inferno"},
+      "title": null,
+      "legend": {"orient": "", "fillColor": "#FcFdFd"}
+    }
+  }
+}
