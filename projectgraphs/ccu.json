@@ -1,0 +1,56 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Top 5 most watched steam games on Twitch (CCU).",
+"height":300, "width":260,
+  "layer":[
+{"data": {
+    "url": "https://raw.githubusercontent.com/CCecondata/CCecondata.github.io/main/projectdata/steamspiapi-730.json",
+    "format": {"type": "json"}},
+    "mark": "bar",
+  "encoding": {
+    "x": {"field": "name", "type": "nominal", "axis": {"labelAngle": 45}, "title":""},
+    "y": {"field": "ccu", "type": "quantitative","title":"Current Concurrent Players"}
+  }},
+  {"data": {
+    "url": "https://raw.githubusercontent.com/CCecondata/CCecondata.github.io/main/projectdata/steamspiapi-730.json",
+    "format": {"type": "json"}},
+    "mark": "bar",
+  "encoding": {
+    "x": {"field": "name", "type": "nominal"},
+    "y": {"field": "ccu", "type": "quantitative"}
+  }},
+  {"data": {
+    "url": "https://raw.githubusercontent.com/CCecondata/CCecondata.github.io/main/projectdata/steamspiapi-570.json",
+    "format": {"type": "json"}},
+    "mark": "bar",
+  "encoding": {
+    "x": {"field": "name", "type": "nominal"},
+    "y": {"field": "ccu", "type": "quantitative"}
+  }},
+  {"data": {
+    "url": "https://raw.githubusercontent.com/CCecondata/CCecondata.github.io/main/projectdata/steamspiapi-381210.json",
+    "format": {"type": "json"}},
+    "mark": "bar",
+  "encoding": {
+    "x": {"field": "name", "type": "nominal"},
+    "y": {"field": "ccu", "type": "quantitative"}
+  }},
+  {"data": {
+    "url": "https://raw.githubusercontent.com/CCecondata/CCecondata.github.io/main/projectdata/steamspiapi-271590.json",
+    "format": {"type": "json"}},
+    "mark": "bar",
+  "encoding": {
+    "x": {"field": "name", "type": "nominal"},
+    "y": {"field": "ccu", "type": "quantitative"}
+  }},
+  {"data": {
+    "url": "https://raw.githubusercontent.com/CCecondata/CCecondata.github.io/main/projectdata/steamspiapi-252490.json",
+    "format": {"type": "json"}},
+    "mark": "bar",
+  "encoding": {
+    "x": {"field": "name", "type": "nominal"},
+    "y": {"field": "ccu", "type": "quantitative"}
+  }}
+  
+]
+  }
