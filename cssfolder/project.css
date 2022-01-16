@@ -1,0 +1,52 @@
+body{
+  background-color: #CBC3E3;
+  text-align:center;
+  margin: auto
+}
+
+h1{
+  colour: #0D0C0C;
+  font-size: 50px
+}
+
+h2{
+  colour: #F4BB44;
+  font-size: 30px
+}
+
+h3{
+  colour: #FFFFFF;
+  font-size: 20px
+}
+
+h4{
+  colour: #000000
+}
+
+p{
+  colour: #FFFFFF
+}
+
+.chart{
+  width: auto;
+  border-width: 4px;
+  background-colour: #FFFFFF;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #FFFFFF;
+  margin: auto
+}
+
+.container {
+  align-content: center;
+  justify-content: center;
+  display: flex
+}
+  
+  
+
+
+
+
+   
+  
