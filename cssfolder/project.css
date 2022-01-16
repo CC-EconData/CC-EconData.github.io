@@ -42,6 +42,10 @@ p{
   justify-content: center;
   display: flex
 }
+
+.imagechart{
+  position: static
+}
   
   
 
