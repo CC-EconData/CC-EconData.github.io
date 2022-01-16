@@ -34,7 +34,11 @@ p{
 .container {
   align-content: center;
   justify-content: center;
-  display: flex
+  display: flex;
+  border: 5px solid rgb(129, 116, 116);
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 
 .imagechart{
