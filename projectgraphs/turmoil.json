@@ -1,39 +1,43 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Average players for Turmoil per month 2020",
-
-    "height": 300,"width": 260,
-  
-"layer": [ 
-  
-  {"data": {
-    "values": [
-      {"Month": "January", "Average Players":""},{"Month": "February", "Average Players":900}
-    ]
+  "title": {
+    "text": "Average players for Turmoil in 2020 ",
+    "subtitle": ["Shows average player count on steam for Turmoil for each month","of 2020. Hover over / click on each point for specific value."],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
   },
-    "mark": {"type": "rect", "strokeWidth": 1},
+  "height": 300,
+  "width": 260,
+  "layer": [
+    {
+      "data": {
+        "values": [
+          {"Month": "January", "Average Players": ""},
+          {"Month": "February", "Average Players": 900}
+        ]
+      },
+      "mark": {"type": "rect", "strokeWidth": 1},
       "encoding": {
-        "y":{"field":"Average Players","type":"quantitative"},
-        "x":{"field":"Month","type":"nominal","sort":""},
+        "y": {"field": "Average Players", "type": "quantitative"},
+        "x": {"field": "Month", "type": "nominal", "sort": ""},
         "color": {"value": "yellow"},
-        "opacity":{"value":0.6
-        }
+        "opacity": {"value": 0.6}
       }
-  },
-   {"data": {
-    "url": "https://raw.githubusercontent.com/CCecondata/CCecondata.github.io/main/projectdata/turmoil.csv",
-    "format": {"type": "csv"}
-  },
-    "mark": {
-    "type": "line",
-    "point": true
-  },
-  "encoding": {
-    "x": {"field": "Month", "type": "nominal","sort": {"field":"index"}},
-    "y": {"field":"Average Players", "type": "quantitative"},
-    "tooltip":{"field":"Average Players", "type":"quantitative"
-        }
-  }
-  }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/CCecondata/CCecondata.github.io/main/projectdata/turmoil.csv",
+        "format": {"type": "csv"}
+      },
+      "mark": {"type": "line", "point": true},
+      "encoding": {
+        "x": {"field": "Month", "type": "nominal", "sort": {"field": "index"},"title":""},
+        "y": {"field": "Average Players", "type": "quantitative"},
+        "tooltip": {"field": "Average Players", "type": "quantitative"}
+      }
+    }
   ]
-  }
+}
