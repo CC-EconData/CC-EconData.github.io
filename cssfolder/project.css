@@ -32,7 +32,7 @@ p{
   border-width: 4px;
   background-colour: #CBC3E3;
   border-style: solid;
-  border-radius: 10px;
+  border-radius: auto;
   margin: auto;
   border-color: #CBC3E3
 }
