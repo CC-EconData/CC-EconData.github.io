@@ -1,6 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Shows total % of watch time on twitch by Platform.",
+  "height": 300,
+  "width": 260,
   "data": {
         "url": "https://raw.githubusercontent.com/CCecondata/CCecondata.github.io/main/projectdata/watch_time.csv",
         "format": {"type": "csv"}},
