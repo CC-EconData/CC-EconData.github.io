@@ -30,7 +30,6 @@
 
 <body>
 <h1 class="site_name"> Conor Czech Data Science Course </h1>
-<br>
 <h2 class="page_name"> My Project </h2>  
 <div class="nav">
   <a href="index.html">Homepage</a>
@@ -43,8 +42,6 @@
 <!-- ///////////////////  Portfolio intro  //////////////////////////////////// -->  
 <br>  
 <h3 class="project_title"> Is the advertising revenue Twitch streamers make warranted? </h3>
-<br>
-  
 <container class="textcontainer">
   <div id="maintext"
        <p>In December 2020, Twitch Streamer Mizkif accidentally leaked that he made over $40,000 in one month through doing advertised streams. 
@@ -64,11 +61,12 @@
    With this in mind, the goal of my project will be to see if paying Twitch streamers all this money to stream their games is beneficial to a company. 
           I will look at the correlation between games streamed and played to analyse this. 
   </p>
+  </container>
+<br> 
 
-  <h4> My data </h4>
- <br>
- 
-  <p> Originally, my plan was to compare games streamed and game sales. However, I ran into an issue with this as I could not find monthly game sales data, 
+<h4> My data </h4>
+<container class="textcontainer">
+<p> Originally, my plan was to compare games streamed and game sales. However, I ran into an issue with this as I could not find monthly game sales data, 
     only top 10 lists with most of these lists being in a random order. My resolution to this is to compare games streamed to player data. 
     Video games are played on many services such as Steam, Origin, and video game consoles. 
     Steam had the best monthly player data available and so I used Steam for the rest of the project. 
@@ -85,10 +83,10 @@
   </div>
   <a href="https://colab.research.google.com/drive/1O1gEE2tM6A37kdlMkVrPh2gIVeWzPMA1?usp=sharing">Collab link</a>
   <p>Add point and click?.</p> 
-  
- 
-  <h4> Analysis of the impact of one streamer on a specific video game </h4>
-  
+</container> 
+<br>
+<h4> What is the impact of one streamer on a specific video game </h4>
+<container class="textcontainer">  
   <p>As demonstrated by figure 3, XQC is currently one of the most popular streamers and has been for a few years. 
     Before getting into regression analysis, I wanted to see if there was a graphical impact made on the number of average players for a game when a 
     popular streamer plays it. For this I chose XQC and the game “Turmoil”. I chose Turmoil because it was a game released in June 2016. 
@@ -108,8 +106,13 @@
   <p> As demonstrated in figure 4, during the year 2020, the month XQC played Turmoil
     – highlighted by yellow – received a massive boost in average players from the previous month. While the average players did decrease after February,
     it remained higher than before XQC played the game implying this had a slight lasting effect. </p>
+</container> 
   
-  <!--Chart 4 -->
+<h4> Analysis of the relationship between the top 5 most watched Steam games on Twitch and 
+  their player base</h4>
+
+<container class="textcontainer">
+<!--Chart 4 -->
   <div class="chart" id="chart4">
       <script>
         var myChart4 = "/projectgraphs/ccu.json";
@@ -117,33 +120,40 @@
       </script>
   </div>
   <a href="https://colab.research.google.com/drive/17h7jYwkej5gAyG5axna9DArETCziE2W3?usp=sharing">Collab API loop link</a>
-  <p>CHANGEGTA5TODIFFERENTGAME????</p>
-  
- 
+  <p>CHANGEGTA5TODIFFERENTGAME????   Figure 5 demonstrates the  Current Concurrent Players (CCP) in January 2021 for the top 5 most watched twitch. 
+    It is these games that I decide to study for a correlation between viewership and playership. 
+    I do this for the months January 2019 to December 2021. </p>
+</container>
+
+<container class="textcontainer">
  <!--Chart 5 -->
   <div class="chart" id="chart5">
       <img src="/projectgraphs/rust.png" style="height:300px;width:280px;">
   </div>
   <a href="https://colab.research.google.com/drive/1cFqpx5FBh37wdNAExKVA_xjlQhJ1oQvf?usp=sharing">Collab link</a>
-  <p>CHANGE INTERACTIVITY? AND COLLAB FILE.</p> 
-  
- <!--Chart 6 -->
+  <p>CHANGE INTERACTIVITY? AND COLLAB FILE. ------  The regression results in an R2 value of _______ and a coefficient of _____ significant at _____; 
+    as shown in figure 6 This is ¬¬¬¬¬¬______________ indicating a relationship between the two. Could be reverse causality. </p> 
+</container>  
+ 
+<br>
+
+<h4> What about during the month that games are released </h4>
+<container class="textcontainer">
+<!--Chart 6 -->
   <div class="chart" id="chart6">
       <img src="/projectgraphs/graph6.png" style="height:300px;width:280px;">
   </div>
   <a href="https://colab.research.google.com/drive/1Qc2q9E7HEiIb-jxSQQc3hK_ZNpX1C56T?usp=sharing">Collab link</a>
-  <p>CHANGE INTERACTIVITY?/COLLABFILE/ADDANOTHERGAME?ALSODELETEDDBDVALUE.</p> 
+  <p>CHANGE INTERACTIVITY?/COLLABFILE/ADDANOTHERGAME?ALSODELETEDDBDVALUE. ------   One difficulty of the data I have collected is how representative 
+    Average Players is of the number of game sales. It could just be that, in the case of Turmoil for example, 
+    a number of players who originally bought the game when it first came out go back to it after a number of months due to a streamer they watch playing it. 
+    With this in mind, I decide to compare Peak Players on Steam against hours watched on Twitch for games released in five months of 2021 during the month 
+    of their release. I do this as peak players should be more representative of sales here as it cannot be the case that peak players are increasing 
+    because people are going back to the game; it must be due to people buying the game. Figure 7 demonstrates this regression. 
+    The regression results in an R2 value of _______ and a coefficient of _____ significant at _____; as shown in figure 6 
+    This is ¬¬¬¬¬¬______________ indicating a relationship between the two. Could be reverse causality.</p> 
+</container>
   
-  
-  
-  
-  
-  
- 
-  
- 
-
-
 </body>
 <!-- ///////////////////  END BODY //////////////////////////////////// -->
 
