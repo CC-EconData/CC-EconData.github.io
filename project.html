@@ -38,14 +38,13 @@
 <!-- ///////////////////  Project intro  //////////////////////////////////// -->  
 <br>  
 <h3> Is the advertising revenue Twitch streamers make warranted? </h3>
-<container class="textcontainer">
+<container>
   <div id="maintext"
        <p>In December 2020, Twitch Streamer Mizkif accidentally leaked that he made over $40,000 in one month through doing advertised streams. 
           An advertised stream is where a company pay a streamer x amount for x hours to play their game on stream. This caused some disruption in the twitch community due to the large amount in just one month. 
           Figure 1, using data from Statista and _____, shows that in 2020, the top 11 ad revenue Twitch streamers made was greater than what the top 10 US mean salaries made that year and. 
   In addition, compared to the US average salary, it is _____ greater.</p>
        <br>
-  </div> 
     <!--Chart 1 -->
   <div class="chart" id="chart1">
       <script>
@@ -58,12 +57,13 @@
    With this in mind, the goal of my project will be to see if paying Twitch streamers all this money to stream their games is beneficial to a company. 
           I will look at the correlation between games streamed and played to analyse this. 
   </p>
+  </div>
   </container>
 <br> 
 
 <h4><u> My data </u></h4>
 <div id="maintext"
-<container class="textcontainer">
+<container>
 <p> Originally, my plan was to compare games streamed and game sales. However, I ran into an issue with this as I could not find monthly game sales data, 
     only top 10 lists with most of these lists being in a random order. My resolution to this is to compare games streamed to player data. 
     Video games are played on many services such as Steam, Origin, and video game consoles. 
@@ -71,8 +71,7 @@
     Figure 2 demonstrates that the majority of the most popular 30________ games watched on Twitch are mainly played on Steam; as a result,
     I believe it is acceptable for me to focus on Steam for the rest of this project. 
   </p>
-</div>
-  <br>
+<br>
    <!--Chart 2-->
   <div class="chart" id="chart2">
       <script>
@@ -82,21 +81,20 @@
   </div>
 <br>
   <a href="https://colab.research.google.com/drive/1O1gEE2tM6A37kdlMkVrPh2gIVeWzPMA1?usp=sharing">Collab link</a>
-  <p>Add point and click?.</p> 
+  <p>Add point and click?.</p>
+</div>
 </container> 
 <br>
 <h4><u> What is the impact of one streamer on a specific video game </u></h4>
 <div id="maintext"
-<container class="textcontainer">  
+<container>  
   <p>As demonstrated by figure 3, XQC is currently one of the most popular streamers and has been for a few years. 
     Before getting into regression analysis, I wanted to see if there was a graphical impact made on the number of average players for a game when a 
     popular streamer plays it. For this I chose XQC and the game “Turmoil”. I chose Turmoil because it was a game released in June 2016. 
     This is significant because XQC played this game in 2020 allowing me to see if a streamer can increase the number of players a 
     game has even after it has been released for a number of years. </p>
  <br>
-</div>
-
- <!--Chart 3 -->
+<!--Chart 3 -->
   <div class="chart" id="chart3">
       <script>
         var myChart3 = "/projectgraphs/turmoil.json";
@@ -106,7 +104,6 @@
 <br>
   <a href="https://colab.research.google.com/drive/1mp14Xa6XS2edUsY5F-RrN3mcsTJ02klX?usp=sharing">Collab link</a>
   <br>
-<div id="maintext"
   <p> As demonstrated in figure 4, during the year 2020, the month XQC played Turmoil
     – highlighted by yellow – received a massive boost in average players from the previous month. While the average players did decrease after February,
     it remained higher than before XQC played the game implying this had a slight lasting effect. </p>
@@ -116,7 +113,7 @@
 <h4><u> Analysis of the relationship between the top 5 most watched Steam games on Twitch and 
   their player base</u></h4>
 
-<container class="textcontainer">
+<container>
 <!--Chart 4 -->
   <div class="chart" id="chart4">
       <script>
