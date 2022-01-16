@@ -33,7 +33,13 @@ p{
   background-colour: #FFFFFF;
   border-style: solid;
   border-radius: 10px;
-  margin: auto
+  margin: auto;
+  align-items: center;
+  justify-content: center; 
+  position: static; 
+  text-align: center;
+  padding: 5px;
+  flex-flow: row wrap
 }
 
 .container {
