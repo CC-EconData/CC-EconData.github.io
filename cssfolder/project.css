@@ -41,6 +41,16 @@ container {
   border-right: none;
 }
 
+container2 {
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  border: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
 .imagechart{
   position: static
 }
