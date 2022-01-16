@@ -28,19 +28,11 @@ container {
   align-content: center;
   justify-content: center;
   display: flex;
-  border: 5px solid #228B22;
+  border: 8px solid #fadadd;
   border-top: none;
-  border-left: none;
   border-right: none;
+  border-left: none;
 }
 
-container2 {
-  align-content: center;
-  justify-content: center;
-  display: flex;
-  border: none;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-}
+
   
