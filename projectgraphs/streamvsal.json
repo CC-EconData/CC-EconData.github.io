@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "This chart shows estimated advertising revenue for top twitch streamers for 2020.",
   "title": {
-    "text": "2020 ad revenue for select Twitch streamers",
+    "text": "2020 ad revenue for select Twitch streamers compared to US means",
     "subtitle": "",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
@@ -15,7 +15,10 @@
     "url": "https://raw.githubusercontent.com/CCecondata/CCecondata.github.io/main/projectdata/streameradrevenue.csv",
     "format": {"type": "csv"}
   },
-  "transform": [{"calculate": "datum.value-176593", "as": "diff"}],
+  "transform": [{"calculate": "datum.value-176593", "as": "diff1"},
+  {"calculate": "datum.value-56310", "as": "diff2"}
+  ],
+  
   "layer": [
     {
       "mark": {"type": "bar", "color": "aquamarine"},
@@ -29,15 +32,21 @@
         "y": {
           "field": "value",
           "type": "quantitative",
-          "title": "US Dollars",
+          "title": "Ad revenue ($)",
           "axis": {"grid": false}
         },
         "tooltip": [
           {
-            "field": "diff",
+            "field": "diff1",
             "type": "quantitative",
-            "title": "Difference ",
-            "format": "$,"
+            "title": "Difference from top 10 mean ",
+            "format": "+$,"
+          },
+          {
+            "field": "diff2",
+            "type": "quantitative",
+            "title": "Difference from US mean ",
+            "format": "+$,"
           }
         ]
       }
@@ -64,17 +73,12 @@
       }
     },
     {
-      "data": {
-    "values": [
-      {"a": "Mean Wage", "b": 56310}
-      ]
-  },
+      "data": {"values": [{"a": "Mean Wage", "b": 56310}]},
       "mark": "rule",
       "encoding": {
         "y": {"field": "b", "type": "quantitative"},
         "tooltip": [
           {
-            
             "field": "b",
             "type": "quantitiative",
             "title": "US Mean Salary (2020)",
