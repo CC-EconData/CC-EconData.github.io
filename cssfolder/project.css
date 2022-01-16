@@ -30,16 +30,11 @@ p{
 .chart{
   width: auto;
   border-width: 4px;
-  background-colour: #FFFFFF;
+  background-colour: #CBC3E3;
   border-style: solid;
   border-radius: 10px;
   margin: auto;
-  align-items: center;
-  justify-content: center; 
-  position: static; 
-  text-align: center;
-  padding: 5px;
-  flex-flow: row wrap
+  border-color: #CBC3E3
 }
 
 .container {
