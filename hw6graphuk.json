@@ -1,7 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
-    "note": "API loop hw",
+    "title": {
+    "text": "COVID cases UK 2020"},
       
     "data": {"url":"https://raw.githubusercontent.com/CCecondata/CCecondata.github.io/main/hw6covid19api-uk.json",
     "format": {"type": "json"}
