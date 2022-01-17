@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "This chart shows estimated advertising revenue for top twitch streamers for 2020.",
   "title": {
-    "text": "2020 ad revenue for select Twitch streamers compared to US means",
+    "text": ["Figure 1: 2020 ad revenue for select Twitch streamers", "compared to US means"],
     "subtitle": "",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
