@@ -3,7 +3,10 @@
   "description": "Average players for Turmoil per month 2020",
   "title": {
     "text": "Average players for Turmoil in 2020 ",
-    "subtitle": ["Shows average player count on steam for Turmoil for each month","of 2020. Hover over / click on each point for specific value."],
+    "subtitle": [
+      "Shows average player count on steam for Turmoil for each month",
+      "of 2020. Hover over / click on each point for specific value."
+    ],
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "anchor": "start",
@@ -32,9 +35,18 @@
         "url": "https://raw.githubusercontent.com/CCecondata/CCecondata.github.io/main/projectdata/turmoil.csv",
         "format": {"type": "csv"}
       },
-      "mark": {"type": "line", "point": true},
+      "mark": {"type": "line", "point": {
+      "filled": false,
+      "fill": "skyblue",
+      "size":"150"
+    }},
       "encoding": {
-        "x": {"field": "Month", "type": "nominal", "sort": {"field": "index"},"title":""},
+        "x": {
+          "field": "Month",
+          "type": "nominal",
+          "sort": {"field": "index"},
+          "title": ""
+        },
         "y": {"field": "Average Players", "type": "quantitative"},
         "tooltip": {"field": "Average Players", "type": "quantitative"}
       }
