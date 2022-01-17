@@ -1,236 +1,173 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Top 5 most watched steam games on Twitch (CCU).",
-"height":300, "width":260,
-  
-  
-  
-  
-  "layer":[
-
-
-
-{"data": {
-    "url": "https://raw.githubusercontent.com/CCecondata/CCecondata.github.io/main/projectdata/steamspiapi-730.json",
-    "format": {"type": "json"}},
-    "params": [
-    {
-      "name": "highlight",
-      "select": {"type": "point", "on": "mouseover"}
-    },
-    {"name": "select", "select": "point"}
-  ],
-    "mark": {
-    "type": "bar",
-    "fill": "#4C78A8",
-    "stroke": "black",
-    "cursor": "pointer"
-  },
-  "encoding": {
-    "x": {"field": "name", "type": "nominal", "axis": {"labelAngle": 45}, "title":""},
-    "y": {"field": "ccu", "type": "quantitative","title":"Current Concurrent Players"},
-    "fillOpacity": {
-      "condition": {"param": "select", "value": 1},
-      "value": 0.3
-    },
-    "strokeWidth": {
-      "condition": [
-        {
-          "param": "select",
-          "empty": false,
-          "value": 2
-        },
-        {
-          "param": "highlight",
-          "empty": false,
-          "value": 1
-        }
-      ],
-      "value": 0
-    }
-  
-  
-  }},
-  
-  
-  
-  {
-      "data": {
-    "url": "https://raw.githubusercontent.com/CCecondata/CCecondata.github.io/main/projectdata/steamspiapi-570.json",
-    "format": {"type": "json"}},
-    "params": [
-    {
-      "name": "highlight2",
-      "select": {"type": "point", "on": "mouseover"}
-    },
-    {"name": "select2", "select": "point"}
-  ],
-    "mark": {
-    "type": "bar",
-    "fill": "#4C78A8",
-    "stroke": "black",
-    "cursor": "pointer"
-  },
-  "encoding": {
-    "x": {"field": "name", "type": "nominal"},
-    "y": {"field": "ccu", "type": "quantitative"},
-     "fillOpacity": {
-      "condition": {"param": "select", "value": 1},
-      "value": 0.3
-    },
-    "strokeWidth": {
-      "condition": [
-        {
-          "param": "select",
-          "empty": false,
-          "value": 2
-        },
-        {
-          "param": "highlight",
-          "empty": false,
-          "value": 1
-        }
-      ],
-      "value": 0
-    }
-  }},
+  "height": 300,
+  "width": 260,
+  "layer": [
     {
       "data": {
-    "url": "https://raw.githubusercontent.com/CCecondata/CCecondata.github.io/main/projectdata/steamspiapi-381210.json",
-    "format": {"type": "json"}},
-    "params": [
-    {
-      "name": "highlight3",
-      "select": {"type": "point", "on": "mouseover"}
-    },
-    {"name": "select3", "select": "point"}
-  ],
-    "mark": {
-    "type": "bar",
-    "fill": "#4C78A8",
-    "stroke": "black",
-    "cursor": "pointer"
-  },
-  "encoding": {
-    "x": {"field": "name", "type": "nominal"},
-    "y": {"field": "ccu", "type": "quantitative"},
-     "fillOpacity": {
-      "condition": {"param": "select", "value": 1},
-      "value": 0.3
-    },
-    "strokeWidth": {
-      "condition": [
-        {
-          "param": "select",
-          "empty": false,
-          "value": 2
-        },
-        {
-          "param": "highlight",
-          "empty": false,
-          "value": 1
-        }
+        "url": "https://raw.githubusercontent.com/CCecondata/CCecondata.github.io/main/projectdata/steamspiapi-730.json",
+        "format": {"type": "json"}
+      },
+      "params": [
+        {"name": "highlight", "select": {"type": "point", "on": "mouseover"}},
+        {"name": "select", "select": "point"}
       ],
-      "value": 0
-    }
-  }},
+      "mark": {
+        "type": "bar",
+        "fill": "#4C78A8",
+        "stroke": "black",
+        "cursor": "pointer"
+      },
+      "encoding": {
+        "x": {
+          "field": "name",
+          "type": "nominal",
+          "axis": {"labelAngle": 45},
+          "title": ""
+        },
+        "y": {
+          "field": "ccu",
+          "type": "quantitative",
+          "title": "Current Concurrent Players"
+        },
+        "fillOpacity": {
+          "condition": {"param": "select", "value": 1},
+          "value": 0.3
+        },
+        "strokeWidth": {
+          "condition": [
+            {"param": "select", "empty": false, "value": 2},
+            {"param": "highlight", "empty": false, "value": 1}
+          ],
+          "value": 0
+        }
+      }
+    },
     {
       "data": {
-    "url": "https://raw.githubusercontent.com/CCecondata/CCecondata.github.io/main/projectdata/steamspiapi-271590.json",
-    "format": {"type": "json"}},
-    "params": [
-    {
-      "name": "highlight4",
-      "select": {"type": "point", "on": "mouseover"}
-    },
-    {"name": "select4", "select": "point"}
-  ],
-    "mark": {
-    "type": "bar",
-    "fill": "#4C78A8",
-    "stroke": "black",
-    "cursor": "pointer"
-  },
-  "encoding": {
-    "x": {"field": "name", "type": "nominal"},
-    "y": {"field": "ccu", "type": "quantitative"},
-     "fillOpacity": {
-      "condition": {"param": "select", "value": 1},
-      "value": 0.3
-    },
-    "strokeWidth": {
-      "condition": [
-        {
-          "param": "select",
-          "empty": false,
-          "value": 2
-        },
-        {
-          "param": "highlight",
-          "empty": false,
-          "value": 1
-        }
+        "url": "https://raw.githubusercontent.com/CCecondata/CCecondata.github.io/main/projectdata/steamspiapi-570.json",
+        "format": {"type": "json"}
+      },
+      "params": [
+        {"name": "highlight2", "select": {"type": "point", "on": "mouseover"}},
+        {"name": "select2", "select": "point"}
       ],
-      "value": 0
-    }
-  }},
-  {
+      "mark": {
+        "type": "bar",
+        "fill": "#4C78A8",
+        "stroke": "black",
+        "cursor": "pointer"
+      },
+      "encoding": {
+        "x": {"field": "name", "type": "nominal"},
+        "y": {"field": "ccu", "type": "quantitative"},
+        "fillOpacity": {
+          "condition": {"param": "select", "value": 1},
+          "value": 0.3
+        },
+        "strokeWidth": {
+          "condition": [
+            {"param": "select", "empty": false, "value": 2},
+            {"param": "highlight", "empty": false, "value": 1}
+          ],
+          "value": 0
+        }
+      }
+    },
+    {
       "data": {
-    "url": "https://raw.githubusercontent.com/CCecondata/CCecondata.github.io/main/projectdata/steamspiapi-252490.json",
-    "format": {"type": "json"}},
-    "params": [
-    {
-      "name": "highlight5",
-      "select": {"type": "point", "on": "mouseover"}
-    },
-    {"name": "select5", "select": "point"}
-  ],
-    "mark": {
-    "type": "bar",
-    "fill": "#4C78A8",
-    "stroke": "black",
-    "cursor": "pointer"
-  },
-  "encoding": {
-    "x": {"field": "name", "type": "nominal"},
-    "y": {"field": "ccu", "type": "quantitative"},
-     "fillOpacity": {
-      "condition": {"param": "select5", "value": 1},
-      "value": 0.3
-    },
-    "strokeWidth": {
-      "condition": [
-        {
-          "param": "select5",
-          "empty": false,
-          "value": 2
-        },
-        {
-          "param": "highlight5",
-          "empty": false,
-          "value": 1
-        }
+        "url": "https://raw.githubusercontent.com/CCecondata/CCecondata.github.io/main/projectdata/steamspiapi-381210.json",
+        "format": {"type": "json"}
+      },
+      "params": [
+        {"name": "highlight3", "select": {"type": "point", "on": "mouseover"}},
+        {"name": "select3", "select": "point"}
       ],
-      "value": 0
+      "mark": {
+        "type": "bar",
+        "fill": "#4C78A8",
+        "stroke": "black",
+        "cursor": "pointer"
+      },
+      "encoding": {
+        "x": {"field": "name", "type": "nominal"},
+        "y": {"field": "ccu", "type": "quantitative"},
+        "fillOpacity": {
+          "condition": {"param": "select", "value": 1},
+          "value": 0.3
+        },
+        "strokeWidth": {
+          "condition": [
+            {"param": "select", "empty": false, "value": 2},
+            {"param": "highlight", "empty": false, "value": 1}
+          ],
+          "value": 0
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/CCecondata/CCecondata.github.io/main/projectdata/steamspiapi-108600.json",
+        "format": {"type": "json"}
+      },
+      "params": [
+        {"name": "highlight4", "select": {"type": "point", "on": "mouseover"}},
+        {"name": "select4", "select": "point"}
+      ],
+      "mark": {
+        "type": "bar",
+        "fill": "#4C78A8",
+        "stroke": "black",
+        "cursor": "pointer"
+      },
+      "encoding": {
+        "x": {"field": "name", "type": "nominal"},
+        "y": {"field": "ccu", "type": "quantitative"},
+        "fillOpacity": {
+          "condition": {"param": "select", "value": 1},
+          "value": 0.3
+        },
+        "strokeWidth": {
+          "condition": [
+            {"param": "select", "empty": false, "value": 2},
+            {"param": "highlight", "empty": false, "value": 1}
+          ],
+          "value": 0
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/CCecondata/CCecondata.github.io/main/projectdata/steamspiapi-252490.json",
+        "format": {"type": "json"}
+      },
+      "params": [
+        {"name": "highlight5", "select": {"type": "point", "on": "mouseover"}},
+        {"name": "select5", "select": "point"}
+      ],
+      "mark": {
+        "type": "bar",
+        "fill": "#4C78A8",
+        "stroke": "black",
+        "cursor": "pointer"
+      },
+      "encoding": {
+        "x": {"field": "name", "type": "nominal"},
+        "y": {"field": "ccu", "type": "quantitative"},
+        "fillOpacity": {
+          "condition": {"param": "select5", "value": 1},
+          "value": 0.3
+        },
+        "strokeWidth": {
+          "condition": [
+            {"param": "select5", "empty": false, "value": 2},
+            {"param": "highlight5", "empty": false, "value": 1}
+          ],
+          "value": 0
+        }
+      }
     }
-  }}
-  
-
-
-  
-],
-
- 
-
-
-
-
-
-
-
-"config": {
-    "scale": {
-      "bandPaddingInner": 0.3
-    }
-  }
-  }
+  ],
+  "config": {"scale": {"bandPaddingInner": 0.3}}
+}
