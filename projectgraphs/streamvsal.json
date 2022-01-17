@@ -15,10 +15,10 @@
     "url": "https://raw.githubusercontent.com/CCecondata/CCecondata.github.io/main/projectdata/streameradrevenue.csv",
     "format": {"type": "csv"}
   },
-  "transform": [{"calculate": "datum.value-176593", "as": "diff1"},
-  {"calculate": "datum.value-56310", "as": "diff2"}
+  "transform": [
+    {"calculate": "datum.value-185659", "as": "diff1"},
+    {"calculate": "datum.value-56310", "as": "diff2"}
   ],
-  
   "layer": [
     {
       "mark": {"type": "bar", "color": "aquamarine"},
