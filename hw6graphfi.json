@@ -12,7 +12,7 @@
     
     "encoding": {
       
-      "x": {"field": "Date", "type": "temporal"},
+      "x": {"field": "Date", "type": "temporal", "title":""},
       
       "y": {"field": "Cases", "type": "quantitative", "title": "Deaths"}
     }
