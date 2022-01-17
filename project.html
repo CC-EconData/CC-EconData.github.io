@@ -42,10 +42,9 @@
   </container>
 <container>
   <div>
-       <p>In December 2020, Twitch Streamer Mizkif accidentally leaked that he made over $40,000 in one month through doing advertised streams. 
-          An advertised stream is where a company pay a streamer x amount for x hours to play their game on stream. This caused some disruption in the twitch community due to the large amount in just one month. 
-          Figure 1, using data from Statista and _____, shows that in 2020, the top 11 ad revenue Twitch streamers made was greater than what the top 10 US mean salaries made that year and. 
-  In addition, compared to the US average salary, it is _____ greater.</p>
+       <p>The fact that streamers make so much from advertised streams has been discussed in a number of news articles. 
+         Using 2020 data from Statista and U.S. Bureau of Labor Statistics, 
+         Figure 1 compares the ad revenue of several top streamers to the US salaries. </p>
        <br>
     <!--Chart 1 -->
   <div class="chart" id="chart1">
@@ -58,9 +57,8 @@
   <br>
       <a href="https://colab.research.google.com/drive/1o4wIZHP_e2V9MlisjSQys44yKYc6xWqf?usp=sharing">Scrape link</a>
   <br>
-  <p>
-   With this in mind, the goal of my project will be to see if paying Twitch streamers all this money to stream their games is beneficial to a company. 
-          I will look at the correlation between games streamed and played to analyse this. 
+  <p>With this in mind, my project will be focussed on whether there is a correlation between the games streamers play on 
+    Twitch and those most commonly played to see if there is any justification for this pay.
   </p>
   </div>
   </container>
@@ -69,12 +67,13 @@
 <h4><u> My data </u></h4>
 <container>
    <div>
-         <p> Originally, my plan was to compare games streamed and game sales. However, I ran into an issue with this as I could not find monthly game sales data, 
-          only top 10 lists with most of these lists being in a random order. My resolution to this is to compare games streamed to player data. 
-          Video games are played on many services such as Steam, Origin, and video game consoles. 
-          Steam had the best monthly player data available and so I used Steam for the rest of the project. 
-          Figure 2 demonstrates that the majority of the most popular 30________ games watched on Twitch are mainly played on Steam; as a result,
-          I believe it is acceptable for me to focus on Steam for the rest of this project. 
+         <p> Originally, my plan was to compare games streamed and game sales. However, I ran into an issue with 
+           this as I could not find monthly game sales data; only top 10 lists with most of these being in a random order. 
+           My counter to this is to compare Twitch data to data on player-bases. Video games are played on many platforms such
+           as Steam, Origin, and video game consoles. For the rest of this project, I focus on Steam data for player-base. 
+           There are two reasons for this. Firstly, when researching I found that Steam had the best monthly data available 
+           for specific games. Secondly, as Figure 2 demonstrates, the majority – 33.52% – of the top 35 games watched on 
+           Twitch are mainly played on Steam.
        </p>
 <br>
    <!--Chart 2-->
@@ -93,12 +92,7 @@
 <h4><u> What is the impact of one streamer on a specific video game </u></h4>
   <container>
     <div>
-  <p>As demonstrated by figure 3, XQC is currently one of the most popular streamers and has been for a few years. 
-    Before getting into regression analysis, I wanted to see if there was a graphical impact made on the number of average players for a game when a 
-    popular streamer plays it. For this I chose XQC and the game “Turmoil”. I chose Turmoil because it was a game released in June 2016. 
-    This is significant because XQC played this game in 2020 allowing me to see if a streamer can increase the number of players a 
-    game has even after it has been released for a number of years. </p>
- <br>
+  <br>
 <!--Chart 3 -->
   <div class="chart" id="chart3">
       <script>
@@ -109,9 +103,14 @@
 <br>
   <a href="https://colab.research.google.com/drive/1mp14Xa6XS2edUsY5F-RrN3mcsTJ02klX?usp=sharing">Scrape and cleaning link</a>
   <br>
-  <p> As demonstrated in figure 4, during the year 2020, the month XQC played Turmoil
-    – highlighted by yellow – received a massive boost in average players from the previous month. While the average players did decrease after February,
-    it remained higher than before XQC played the game implying this had a slight lasting effect. </p>
+  <p>XQC is currently one of the most popular streamers and has been for a few years. I wanted to see if there was an 
+    impact on the number of average players for a game when he plays it. For this I chose the game “Turmoil”. 
+    I chose Turmoil because it was a game released in June 2016. This is significant because XQC played this game in 2020 
+    allowing me to see if a streamer can increase the number of players a game has even after it has been released for several years. 
+    As demonstrated in figure 3, the month XQC played Turmoil – highlighted by yellow – received a massive boost in 
+    average players from the previous month. While the average players did decrease after February, it remained higher 
+    than before XQC played the game implying this had a lasting effect. However, this is only for one game and streamer. 
+    I will now move on to analyse multiple games across Twitch.</p>
 </div>
 </container> 
   
@@ -130,9 +129,9 @@
   <br>
   <a href="https://colab.research.google.com/drive/17h7jYwkej5gAyG5axna9DArETCziE2W3?usp=sharing">API loop link</a>
   <br>  
-  <p>CHANGEGTA5TODIFFERENTGAME????   Figure 5 demonstrates the  Current Concurrent Players (CCP) in January 2021 for the top 5 most watched twitch. 
-    It is these games that I decide to study for a correlation between viewership and playership. 
-    I do this for the months January 2019 to December 2021. </p>
+  <p>Figure 4 demonstrates the Current Concurrent Players in January 2021 for the top 5 most watched Twitch 
+    that are mainly played on Steam. It is these games that I decide to study for a correlation between 
+    viewership and player numbers.</p>
   </div>
   </container2>
   <br>
@@ -149,8 +148,11 @@
   <br>
   <a href="https://colab.research.google.com/drive/1Qc2q9E7HEiIb-jxSQQc3hK_ZNpX1C56T?usp=sharing">Regression link</a>
   <br>
-  <p>CHANGE INTERACTIVITY? AND COLLAB FILE. ------  The regression results in an R2 value of _______ and a coefficient of _____ significant at _____; 
-    as shown in figure 6 This is ¬¬¬¬¬¬______________ indicating a relationship between the two. Could be reverse causality. </p> 
+  <p>In figure 5, I regress average players on average viewers and do this for the months January 2019 to December 2021. 
+    The regression results in an R2 value of 0.68 and a coefficient of 5.27 statistically significant at a1% level. 
+    This is implies that a 1 unit increase in average viewership leads to a 5.27 unit increase in average players. 
+    Thus, this indicates a strong statistically significant relationship between the two variables. 
+    That is, the higher average viewers there are, the higher the number of average players there are.</p> 
   </div>
 </container>  
  
@@ -169,17 +171,40 @@
   <br>
   <a href="https://colab.research.google.com/drive/1lDO5cHh32VUmjtvgsv05sYB_4QPDv1ld?usp=sharing">Regression Link</a>
   <br>
-  <p>CHANGE INTERACTIVITY?/COLLABFILE/ADDANOTHERGAME?ALSODELETEDDBDVALUE. ------   One difficulty of the data I have collected is how representative 
-    Average Players is of the number of game sales. It could just be that, in the case of Turmoil for example, 
-    a number of players who originally bought the game when it first came out go back to it after a number of months due to a streamer they watch playing it. 
-    With this in mind, I decide to compare Peak Players on Steam against hours watched on Twitch for games released in five months of 2021 during the month 
-    of their release. I do this as peak players should be more representative of sales here as it cannot be the case that peak players are increasing 
-    because people are going back to the game; it must be due to people buying the game. Figure 7 demonstrates this regression. 
-    The regression results in an R2 value of _______ and a coefficient of _____ significant at _____; as shown in figure 6 
-    This is ¬¬¬¬¬¬______________ indicating a relationship between the two. Could be reverse causality.</p> 
+  <p>The main difficulty of my project is the data I collected; that is, how representative Average Players is of the 
+    number of game sales. It could just be that, in the case of Turmoil for example, a number of players who 
+    originally bought the game when it first came out go back to it after a number of months due to a streamer 
+    they watch playing it. This would lead to the average player count being less representative of the number 
+    of sales a game has. In response to this, I decide to compare peak player count on Steam against total hours 
+    watched on Twitch for several games released during the month of their release. I do this as peak players should 
+    be more representative of sales here as it cannot be the case that peak players are increasing during release 
+    month because people are going back to the game; it must be due to people buying the game. Figure 6 demonstrates 
+    this regression. The regression results in an R2 value of 0.57 and a statistically significant coefficient at a 1% level.
+    </p> 
   </div>
 </container>
 
+  <br>  
+<h4>Conclusion</h4>
+<br>
+<container2>
+  <div>
+    <p>
+      To conclude, my findings imply that there is a statistically significant relationship between the games that are most watched on 
+      Twitch and those most played on Steam. While there are limitations to my data due to using a proxy for game sales, the fact that there 
+      is a significant relationship and similar R2 for both regression I do gives me confidence my results at least imply correlation even though 
+      it is not sufficient to indicate causality.
+      
+<br>
+      Data for Twitch was collected via https://twitchtracker.com/.
+
+<br>
+      Data for Steam was collected via https://steamcharts.com/.
+
+
+    </p>
+  </div>
+  </container2>
 
   
 </body>
