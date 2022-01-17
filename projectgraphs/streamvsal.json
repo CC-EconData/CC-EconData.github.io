@@ -69,7 +69,7 @@
           }
         ],
         "color": {"value": "red"},
-        "size": {"value": 3.5}
+        "size": {"value": 7}
       }
     },
     {
@@ -86,7 +86,7 @@
           }
         ],
         "color": {"value": "black"},
-        "size": {"value": 3.5}
+        "size": {"value": 7}
       }
     }
   ]
