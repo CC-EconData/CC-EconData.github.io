@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Average players for Turmoil per month 2020",
   "title": {
-    "text": "Average players for Turmoil in 2020 ",
+    "text": "Figure 3: Average players for Turmoil in 2020 ",
     "subtitle": [
       "Shows average player count on steam for Turmoil for each month",
       "of 2020. Hover over / click on each point for specific value."
