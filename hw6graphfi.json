@@ -7,7 +7,9 @@
     "data": {"url":"https://raw.githubusercontent.com/CCecondata/CCecondata.github.io/main/hw6covid19api-fi.json",
     "format": {"type": "json"}
   },
-    
+     "height": 300,
+
+    "width": 260,
     "mark": "line",
     
     "encoding": {
