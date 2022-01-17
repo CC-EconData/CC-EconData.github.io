@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Top 5 most watched steam games on Twitch (CCU).",
   "title": {
-    "text": ["Current Concurrent Players for top 5 most watched","Steam games on Twitch"],
+    "text": ["Figure 4: Current Concurrent Players for top 5 most","watched Steam games on Twitch"],
     "subtitle": 
       "For January 2021 - data collected via API loop"
 
