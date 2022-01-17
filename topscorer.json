@@ -1,0 +1,53 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+  
+
+  "data": {"url": "https://app.sportdataapi.com/api/v1/soccer/topscorers?apikey=e4e25d80-51fa-11ec-a1a9-09ca11a539d0&season_id=361",
+  "format":{
+    "type": "json",
+    "property": "data"
+  }
+  },
+
+    "title": {
+    "text": "Championship - Top Goal Scorer",
+    "subtitle":["19/20 season"],
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+
+  },
+
+  "transform": [
+    {"filter":{"field":"player.player_name", "oneOf": ["Oliver George Arthur Watkins", "Aleksandar Mitrovic", "Lewis James Grabban", "Karlan Ahearne-Grant", "Nahki Wells"]}}
+  ],
+
+  "mark": {
+    "type":"bar",
+    "color":"rgb(0,67,167)"},
+
+  "height":300,
+  "width":280,
+  "padding":{
+    "top":0,
+    "bottom":0,
+    "right":0,
+    "left":0
+  },
+  
+  "encoding": {
+
+    "x": {
+      "field": "player.player_name", 
+      "type": "nominal",
+      "sort": {"field": "goals.overall"},
+      "axis": {"title": "", "grid": false, "ticks": false, "labelAngle": 45}},
+
+    "y": {
+      "field": "goals.overall", 
+      "type": "quantitative",
+      
+      "title":"Number of goals"}
+  }
+}
